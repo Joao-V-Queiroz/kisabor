@@ -10,13 +10,7 @@ class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
-        // User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
-
         info('> Iniciando inserção de dados no banco de dados...');
-
         info('> Criando userAdmin');
 
 		User::create([
@@ -28,5 +22,12 @@ class DatabaseSeeder extends Seeder
 			'password' => bcrypt('123456'),
 		]);
 
+        info('Adicionando dados de clientes, pedidos e produtos...');
+
+        $this->call([
+            ClienteSeeder::class,
+            ProdutoSeeder::class,
+            PedidoSeeder::class,
+		]);
     }
 }
