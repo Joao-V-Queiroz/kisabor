@@ -2,14 +2,14 @@
 
 namespace Database\Seeders;
 
+use App\Models\PedidoProduto;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Cliente;
 
-class ClienteSeeder extends Seeder
+class PedidoProdutoSeeder extends Seeder
 {
     public function run(): void
     {
-        Cliente::factory()->count(1)->create();
+    PedidoProduto::factory()->count(2)->create();
     }
 }

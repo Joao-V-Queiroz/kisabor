@@ -13,7 +13,6 @@ class Pedido extends Model
 
     protected $fillable = [
         'cliente_id',
-        'produto_id',
         'quantidade',
         'valor',
         'tipo_pedido',
@@ -30,7 +29,6 @@ class Pedido extends Model
 
     public function produtos()
     {
-        return $this->hasMany(Produto::class);
+        return $this->belongsToMany(Produto::class, 'pedido_produtos');
     }
-
 }

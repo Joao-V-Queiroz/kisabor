@@ -9,7 +9,7 @@ class ClienteFactory extends Factory
     public function definition(): array
     {
         return [
-            'nome' => 'Gabriel OLiveira',
+            'nome' => 'Taynara OLiveira',
             'telefone' => $this->faker->phoneNumber(),
             'cep' => $this->faker->postcode(),
             'endereco' => $this->faker->streetAddress(),

@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Cliente;
+use App\Models\Produto;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -10,7 +12,6 @@ return new class extends Migration
     {
         Schema::create('pedidos', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('produto_id')->constrained();
             $table->foreignId('cliente_id')->constrained();
             $table->integer('quantidade');
             $table->decimal('valor', 10, 2);

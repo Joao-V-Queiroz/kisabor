@@ -9,8 +9,7 @@ class PedidoFactory extends Factory
     public function definition(): array
     {
         return [
-            'cliente_id' => $this->faker->numberBetween(1, 10),
-            'produto_id' => $this->faker->numberBetween(1, 10),
+            'cliente_id' => 1,
             'quantidade' => $this->faker->numberBetween(1, 10),
             'valor' => $this->faker->randomFloat(2, 10, 100),
             'tipo_pedido' => $this->faker->randomElement(['delivery', 'retirada']),

@@ -22,4 +22,9 @@ class Cliente extends Model
         'complemento',
     ];
 
+    public function pedidos()
+    {
+        return $this->hasMany(Pedido::class);
+    }
+
 }

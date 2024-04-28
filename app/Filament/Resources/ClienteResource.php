@@ -20,7 +20,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class ClienteResource extends Resource
 {
     protected static ?string $model = Cliente::class;
-
+    protected static ?int $navigationSort = 1;
     protected static ?string $navigationIcon = 'heroicon-o-users';
 
     public static function form(Form $form): Form
@@ -117,7 +117,7 @@ class ClienteResource extends Resource
             'index' => Pages\ListClientes::route('/'),
             'create' => Pages\CreateCliente::route('/create'),
             'edit' => Pages\EditCliente::route('/{record}/edit'),
-            'view' => Pages\ClienteView::route('/{record}'),
+            'view' => Pages\ViewCliente::route('/{record}'),
         ];
     }
 }

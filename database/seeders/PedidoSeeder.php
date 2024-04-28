@@ -10,6 +10,6 @@ class PedidoSeeder extends Seeder
 {
     public function run(): void
     {
-        Pedido::factory()->count(10)->create();
+        Pedido::factory()->count(2)->create();
     }
 }

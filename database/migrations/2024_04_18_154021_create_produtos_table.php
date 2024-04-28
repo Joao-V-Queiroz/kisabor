@@ -13,7 +13,7 @@ return new class extends Migration
             $table->string('nome');
             $table->string('ingredientes')->nullable();
             $table->decimal('valor', 10, 2);
-            $table->string('tipo'); //pizza, bebida, etc
+            $table->string('tipo');
             $table->timestamps();
         });
     }

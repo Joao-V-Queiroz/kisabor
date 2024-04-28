@@ -12,7 +12,7 @@ class ProdutoFactory extends Factory
             'nome' => $this->faker->word(),
             'ingredientes' => $this->faker->sentence(),
             'valor' => $this->faker->randomFloat(2, 10, 100),
-            'tipo' => $this->faker->randomElement(['pizza', 'hamburguer', 'bebida']),
+            'tipo' => $this->faker->randomElement(['sanduiche', 'bebida', 'sobremesa']),
         ];
     }
 }
