@@ -10,9 +10,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
-    <link type="text/css" href="cdn/boot.css" rel="stylesheet">
-    <link type="text/css" href="cdn/style.css" rel="stylesheet">
-    <title>Projeto Principal</title>
+    <link type="text/css" href="/cdn/boot.css" rel="stylesheet">
+    <link type="text/css" href="/cdn/style.css" rel="stylesheet">
+    <title>KiSabor</title>
 </head>
 
 <body>
@@ -35,14 +35,13 @@
     </header>
 
     <main>
-        <div class="main_cta" style="background-image: url('img/bg_main_home.png');">
+        <div class="main_cta" style="background-image: url('img/bg_img_sanduiche.png');">
             <section class="main_cta_content">
                 <div class="main_cta_content_spacer">
                     <header>
-                        <h1>Aqui você aprende tudo que é necessário para
-                            trabalhar como um webmaster fullstack</h1>
+                        <h1>Na KISabor, cada mordida é uma experiência inesquecível!</h1>
                     </header>
-                    <p>Domine o HTML5 e o CSS3 de uma vez por todas</p>
+                    <p>Veja nosso cardápio e venha se deliciar</p>
                     <p><a class="btn" href="#saiba-mais">Saiba Mais</a></p>
                 </div>
             </section>

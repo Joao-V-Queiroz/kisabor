@@ -16,7 +16,7 @@
 }
 
 .main_header .main_header_content .main_header_content_menu {
-    flex-basis: calc(100% - 330px);  
+    flex-basis: calc(100% - 330px);
     display: flex;
     justify-content: flex-end;
 }
@@ -60,7 +60,7 @@
 }
 
 .main_cta .main_cta_content h1{
-    color: white;
+    color: gray;
     font-size: 3em;
     font-weight: 700;
     text-align: center;
@@ -364,7 +364,7 @@
     flex-basis: calc(70% - 20px);
 }
 
-.main_school_content_left_content > header > p{  
+.main_school_content_left_content > header > p{
     padding: 10px 10px;
     background-color: #2d3142;
     border-radius: 5px;
@@ -546,7 +546,7 @@
     text-align: center;
     color: #333;
     margin: 0 auto;
-} 
+}
 
 .main_optin_footer_content h1{
     font-size: 1.4em;
