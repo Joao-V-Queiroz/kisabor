@@ -10,7 +10,7 @@ use Filament\Notifications\Notification;
 class CreatePedido extends CreateRecord
 {
     protected static string $resource = PedidoResource::class;
-    protected static ?string $title = 'Cadastrar Cliente';
+    protected static ?string $title = 'Cadastrar Pedido';
 
     protected function getCreatedNotification(): ?Notification
     {

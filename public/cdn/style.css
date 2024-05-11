@@ -60,7 +60,7 @@
 }
 
 .main_cta .main_cta_content h1{
-    color: gray;
+    color: white;
     font-size: 3em;
     font-weight: 700;
     text-align: center;
@@ -74,15 +74,15 @@
     margin: 20px 0;
 }
 
-.main_cta .main_cta_content .btn{
-    background-color: #D36833;
+/* .main_cta .main_cta_content .btn{
+    background-color: orangered;
     color: white;
     font-size: 0.8em;
     padding: 10px 40px;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
-}
+} */
 
 .main_cta .main_cta_content .main_cta_content_spacer{
       margin: 0 auto;
@@ -144,131 +144,9 @@
     color: #333;
 }
 
-/* main_optin */
-
-.main_optin{
-    width: 100%;
-    background-color: #2d3142;
-    margin: 40px 0px;
-}
-
-.main_optin .main_optin_content{
-    max-width: calc(1300px - 40px);
-    margin: 0 auto;
-    padding: 40px 20px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.main_optin .main_optin_content header, .main_optin .main_optin_content form{
-    flex-basis: 50%;
-}
-
-.main_optin .main_optin_content header h1, .main_optin .main_optin_content p{
-        color: white;
-        margin-right: 20px;
-        text-align: right;
-}
-
-.main_optin .main_optin_content header h1{
-    font-size: 1.2em;
-    font-weight: 400;
-}
-
-.main_optin .main_optin_content p{
-    font-weight: 300;
-    font-size: 0.875em;
-}
-
-.main_optin_content form{
-    display: flex;
-    justify-content: space-between;
-}
-
-.main_optin_content form input[type=text]{
-    flex-basis: 32%;
-    border: none;
-    border-radius: 10px;
-    padding: 0px 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-}
-
-.main_optin_content form input[type=email]{
-    flex-basis: 32%;
-    border: none;
-    padding: 0px 10px;
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-}
-
-.main_optin_content form button{
-    flex-basis: 20%;
-    background-color: #D36833;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-}
-
-.main_optin_content form button:hover{
-    color: #FFF;
-    background-color: #D36833;
-    font-size: 0.875em;
-}
-
 .main_course{
     width: 100%;
     background-color: #FFF;
-}
-
-.main_course .main_course_header{
-    max-width: 780px;
-    margin: 0 auto;
-    text-align: center;
-    color: #333;
-    margin-bottom: 40px;
-}
-
-.main_course .main_course_header img{
-    margin-bottom: 20px;
-}
-
-.main_course .main_course_header h1{
-    font-size: 3em;
-    margin-bottom: 10px;
-}
-
-.main_course .main_course_content{
-    max-width: 1300px;
-    display: flex;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 40px;
-}
-
-.main_course .main_course_content article{
-    flex-basis: calc(50% - 40px);
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #f7f7f7;
-    border-radius: 5px;
-    -moz-border-radius:5px;
-    -webkit-border-radius:5px;
-}
-
-.main_course .main_course_content article h2{
-    font-size: 1.3em;
-    color: #333;
-    margin-bottom: 4px;
-}
-
-.main_course .main_course_content article p{
-    font-size: 0.9em;
-    color: #333;
 }
 
 .main_course_fullwidth{

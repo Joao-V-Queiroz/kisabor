@@ -4,6 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\PedidoResource\Pages;
 use App\Filament\Resources\PedidoResource\RelationManagers;
+use App\Models\Cliente;
 use App\Models\Pedido;
 use App\Models\Produto;
 use Filament\Forms\Components\Section;
@@ -33,8 +34,15 @@ class PedidoResource extends Resource
                 Section::make()
                     ->columns(12)
                     ->schema([
+                        // Select::make('cliente')
+                        //     ->label('Cliente')
+                        //     ->columnSpan(12)
+                        //     ->relationship('produtos', titleAttribute: 'nome')
+                        //     ->options(Cliente::all()->pluck('nome', 'id')->toArray())
+                        //     ->searchable()
+                        //     ->required(),
                         Select::make('produtos')
-                            ->label('Produto')
+                            ->label('Produtos')
                             ->columnSpan(12)
                             ->relationship('produtos', titleAttribute: 'nome')
                             ->options(Produto::all()->pluck('nome', 'id')->toArray())

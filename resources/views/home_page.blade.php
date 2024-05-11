@@ -26,8 +26,8 @@
             <nav class="main_header_content_menu">
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#portfolio">A Escola</a></li>
+                    <li><a href="#lanche">Lanches</a></li>
+                    <li><a href="#sanduicheria">Sanduicheria</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
@@ -35,420 +35,279 @@
     </header>
 
     <main>
-        <div class="main_cta" style="background-image: url('img/bg_img_sanduiche.png');">
+        <div class="main_cta"
+            style="background-image: url('img/bg_img_sanduiche.png');">
             <section class="main_cta_content">
                 <div class="main_cta_content_spacer">
                     <header>
-                        <h1>Na KISabor, cada mordida é uma experiência inesquecível!</h1>
+                        <h1>Na KISabor, cada mordida é uma experiência
+                            inesquecível!</h1>
                     </header>
                     <p>Veja nosso cardápio e venha se deliciar</p>
-                    <p><a class="btn" href="#saiba-mais">Saiba Mais</a></p>
+                    {{-- <p><a class="btn" href="#saiba-mais">Baixe aqui</a></p> --}}
                 </div>
             </section>
         </div>
 
         <section class="main_blog">
             <header class="main_blog_header">
-                <h1 class="icon-blog">Nossos Últimos artigos</h1>
-                <p>Aqui você encontra os artigos necessários para auxiliar na
-                    sua caminhada web.</p>
+                <h1>Nossos Lanches</h1>
+                <p>Aqui você encontra os melhores lanches e bebidas para se
+                    deliciar.</p>
             </header>
             <article>
-                <a href="#artigo1"><img src="img/post.jpg"
-                        title="Lorem, ipsum dolor" alt="Lorem, ipsum dolor"></a>
-                <p><a class="category" href="#">Categoria</a></p>
+                <a href="#artigo1"><img src="img/post.jpg" title="Bauru"
+                        alt="Bauru"></a>
+                <p><a class="category" href="#">Bauru</a></p>
                 <h2><a class="title" href="#">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Aperiam saepe eveniet animi blanditiis
-                        sunt tenetur ipsum sapiente qui quis quae iste quia
-                        illum voluptates ducimus nobis obcaecati
-                        assumenda, perferendis repudiandae!
+                        Pão, Presunto, Queijo e Tomate.
                     </a>
                 </h2>
             </article>
             <article>
-                <a href="#artigo2"><img src="img/post.jpg"
-                        title="Lorem, ipsum dolor" alt="Lorem, ipsum dolor"></a>
-                <p><a class="category" href="#">Categoria</a></p>
+                <a href="#artigo2"><img src="img/post.jpg" title="Simples"
+                        alt="Simples"></a>
+                <p><a class="category" href="#">Simples</a></p>
                 <h2><a class="title" href="#">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Aperiam saepe eveniet animi blanditiis
-                        sunt tenetur ipsum sapiente qui quis quae iste quia
-                        illum voluptates ducimus nobis obcaecati
-                        assumenda, perferendis repudiandae!
+                        Pão, Hambúrguer, Ovo, Queijo e Batata Palha.
                     </a>
                 </h2>
             </article>
             <article>
-                <a href="#artigo3"><img src="img/post.jpg"
-                        title="Lorem, ipsum dolor" alt="Lorem, ipsum dolor"></a>
-                <p><a class="category" href="#">Categoria</a></p>
+                <a href="#artigo3"><img src="img/post.jpg" title="Vegetariano"
+                        alt="Vegetariano"></a>
+                <p><a class="category" href="#">Vegetariano</a></p>
                 <h2><a class="title" href="#">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Aperiam saepe eveniet animi blanditiis
-                        sunt tenetur ipsum sapiente qui quis quae iste quia
-                        illum voluptates ducimus nobis obcaecati
-                        assumenda, perferendis repudiandae!
+                        Pão, 2 Ovos, Queijo, Alface, Tomate e Milho e Batata
+                        Palha.
                     </a>
                 </h2>
             </article>
             <article>
-                <a href="#artigo4"><img src="img/post.jpg"
-                        title="Lorem, ipsum dolor" alt="Lorem, ipsum dolor"></a>
-                <p><a class="category" href="#">Categoria</a></p>
-                <h2><a class="title" href="#">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Aperiam saepe eveniet animi blanditiis
-                        sunt tenetur ipsum sapiente qui quis quae iste quia
-                        illum voluptates ducimus nobis obcaecati
-                        assumenda, perferendis repudiandae!
+                <a href="#artigo4"><img src="img/burguer.jpg" title="X-Burguer"
+                        alt="X-Burguer"></a>
+                <p><a class="category">X-Burguer</a></p>
+                <h2><a class="title">
+                        Pão, Queijo, Presunto, Hambúrguer, Batata Palha
                     </a>
                 </h2>
             </article>
             <article>
-                <a href="#artigo5"><img src="img/post.jpg"
-                        title="Lorem, ipsum dolor" alt="Lorem, ipsum dolor"></a>
-                <p><a class="category" href="#">Categoria</a></p>
+                <a href="#artigo5"><img src="img/post.jpg" title="X-Salada"
+                        alt="X-Salada"></a>
+                <p><a class="category" href="#">X-Salada</a></p>
                 <h2><a class="title" href="#">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Aperiam saepe eveniet animi blanditiis
-                        sunt tenetur ipsum sapiente qui quis quae iste quia
-                        illum voluptates ducimus nobis obcaecati
-                        assumenda, perferendis repudiandae!
+                        Pão, Queijo, Hambúrguer, Ovo, Alface, Tomate, Milho e
+                        Batata Palha.
                     </a>
                 </h2>
             </article>
             <article>
-                <a href="#artigo6"><img src="img/post.jpg"
-                        title="Lorem, ipsum dolor" alt="Lorem, ipsum dolor"></a>
-                <p><a class="category" href="#">Categoria</a></p>
+                <a href="#artigo6"><img src="img/salada_frango.jpg"
+                        title="X-Salada Frango" alt="X-Salada Frango"></a>
+                <p><a class="category" href="#">X-Salada Frango</a></p>
                 <h2><a class="title" href="#">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Aperiam saepe eveniet animi blanditiis
-                        sunt tenetur ipsum sapiente qui quis quae iste quia
-                        illum voluptates ducimus nobis obcaecati
-                        assumenda, perferendis repudiandae!
+                        Pão, Hambúrguer de Frango, Ovo, Queijo, Alface, Tomate,
+                        Milho e Batata Palha.
                     </a>
                 </h2>
             </article>
             <article>
-                <a href="#artigo7"><img src="img/post.jpg"
-                        title="Lorem, ipsum dolor" alt="Lorem, ipsum dolor"></a>
-                <p><a class="category" href="#">Categoria</a></p>
+                <a href="#artigo7"><img src="img/post.jpg" title="X-Lolô"
+                        alt="X-Lolô"></a>
+                <p><a class="category" href="#">X-Lolô</a></p>
                 <h2><a class="title" href="#">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Aperiam saepe eveniet animi blanditiis
-                        sunt tenetur ipsum sapiente qui quis quae iste quia
-                        illum voluptates ducimus nobis obcaecati
-                        assumenda, perferendis repudiandae!
+                        Pão, Hámburguer, Queijo, Salsicha, Alface, Tomate, Milho
+                        e Batata Palha.
                     </a>
                 </h2>
             </article>
             <article>
-                <a href="#artigo8"><img src="img/post.jpg"
-                        title="Lorem, ipsum dolor" alt="Lorem, ipsum dolor"></a>
-                <p><a class="category" href="#">Categoria</a></p>
+                <a href="#artigo8"><img src="img/post.jpg" title="X-Bacana"
+                        alt="X-Bacana"></a>
+                <p><a class="category" href="#">X-Bacana</a></p>
                 <h2><a class="title" href="#">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Aperiam saepe eveniet animi blanditiis
-                        sunt tenetur ipsum sapiente qui quis quae iste quia
-                        illum voluptates ducimus nobis obcaecati
-                        assumenda, perferendis repudiandae!
+                        Pão, Hámburguer, Presunto, Queijo, Alface, Tomate,
+                        Batata Palha e Abacaxi.
+                    </a>
+                </h2>
+            </article>
+            <article>
+                <a href="#artigo9"><img src="img/bacon.jpg" title="X-Bacon"
+                        alt="X-Bacon"></a>
+                <p><a class="category" href="#">X-Bacon</a></p>
+                <h2><a class="title" href="#">
+                        Pão, Hámburguer, Bacon, Queijo, Ovo, Alface, Tomate,
+                        Milho e Batata Palha.
                     </a>
                 </h2>
             </article>
             <article>
                 <a href="#artigo9"><img src="img/post.jpg"
-                        title="Lorem, ipsum dolor"
-                        alt="Lorem, ipsum dolor"></a>
-                <p><a class="category" href="#">Categoria</a></p>
+                        title="X-Bacon Frango" alt="X-Bacon Frango"></a>
+                <p><a class="category" href="#">X-Bacon Frango</a></p>
                 <h2><a class="title" href="#">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Aperiam saepe eveniet animi blanditiis
-                        sunt tenetur ipsum sapiente qui quis quae iste quia
-                        illum voluptates ducimus nobis obcaecati
-                        assumenda, perferendis repudiandae!
+                        Pão, Hámburguer de Frango, Bacon, Queijo, Ovo, Alface,
+                        Tomate, Milho e Batata Palha.
                     </a>
                 </h2>
             </article>
             <article>
-                <a href="#artigo10"><img src="img/post.jpg"
-                        title="Lorem, ipsum dolor"
-                        alt="Lorem, ipsum dolor"></a>
-                <p><a class="category" href="#">Categoria</a></p>
+                <a href="#artigo10"><img src="img/carnivoro.jpg"
+                        title="Carnívoro" alt="Carnívoro"></a>
+                <p><a class="category" href="#">Carnívoro</a></p>
                 <h2><a class="title" href="#">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Aperiam saepe eveniet animi blanditiis
-                        sunt tenetur ipsum sapiente qui quis quae iste quia
-                        illum voluptates ducimus nobis obcaecati
-                        assumenda, perferendis repudiandae!
+                        Pão, Hámburguer, Bacon, Presunto, Salsicha, Queijo, Ovo,
+                        Batata Palha.
                     </a>
                 </h2>
             </article>
-            <article>
+            {{-- <article>
                 <a href="#artigo11"><img src="img/post.jpg"
-                        title="Lorem, ipsum dolor"
-                        alt="Lorem, ipsum dolor"></a>
-                <p><a class="category" href="#">Categoria</a></p>
+                        title="Frango Especial" alt="Frango Especial"></a>
+                <p><a class="category" href="#">Frango Especial</a></p>
+                Pão, Hambúrguer de Frango, Presunto, Salsicha, Bacon, Ovo,
+                Tomate, Alface, Milho e Batata Palha.
+                </a>
+                </h2>
+            </article> --}}
+            <article>
+                <a href="#artigo12"><img src="img/duplo.jpg"
+                        title="X-Duplo"
+                        alt="X-Duplo"></a>
+                <p><a class="category" href="#">X-Duplo</a></p>
                 <h2><a class="title" href="#">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Aperiam saepe eveniet animi blanditiis
-                        sunt tenetur ipsum sapiente qui quis quae iste quia
-                        illum voluptates ducimus nobis obcaecati
-                        assumenda, perferendis repudiandae!
+                    Pão, 2 Hambúrgueres, 2 Ovos, Presunto, Alface, Tomate, Milho e Batata Palha.
                     </a>
                 </h2>
             </article>
             <article>
-                <a href="#artigo12"><img src="img/post.jpg"
-                        title="Lorem, ipsum dolor"
-                        alt="Lorem, ipsum dolor"></a>
-                <p><a class="category" href="#">Categoria</a></p>
+                <a href="#artigo13"><img src="img/duplo.jpg"
+                        title="X-Tudo"
+                        alt="X-Tudo"></a>
+                <p><a class="category" href="#">X-Tudo</a></p>
                 <h2><a class="title" href="#">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Aperiam saepe eveniet animi blanditiis
-                        sunt tenetur ipsum sapiente qui quis quae iste quia
-                        illum voluptates ducimus nobis obcaecati
-                        assumenda, perferendis repudiandae!
+                    Pão, Hambúrguer, Salsicha, Ovo, Presunto, Bacon, Queijo, Alface, Tomate, Milho, Abacaxi e Batata Palha.
                     </a>
                 </h2>
             </article>
-        </section>
-        <section class="main_optin">
-            <div class="main_optin_content">
-                <header>
-                    <h1>Quer receber todas as novidades diretamente no seu
-                        e-mail?</h1>
-                    <p>Informe seu nome e e-mail no campo ao lado e clique em
-                        Ok!</p>
-                </header>
-                <form>
-                    <input type="text" placeholder="Seu nome" required>
-                    <input type="email" placeholder="Seu e-mail" required>
-                    <button type="submit">Ok!</button>
-                </form>
-            </div>
         </section>
         <section class="main_course">
-            <header class="main_course_header">
-                <img src="img/logo.png" title="Curso HTML5 e CSS3 Essentials"
-                    alt="Curso HTML5 e CSS3 Essentials">
-                <h1 class="icon-books">HTML5 e CSS3 Essentials</h1>
-                <p>Aprenda a trabalhar com HTML5 e CSS3 para desenvolver seus
-                    projetos e entregar páginas que estejam
-                    dentro dos padrões da WEB seguindo as boas práticas!</p>
-            </header>
-            <div class="main_course_content">
-                <article>
-                    <header>
-                        <h2>Curso 100% Online</h2>
-                        <p>Todas as aulas são gravadas em estúdio profissional
-                            para que você tenha a máxima qualidade de
-                            imagem e vídeo</p>
-                    </header>
-                </article>
-                <article>
-                    <header>
-                        <h2>Suporte Especializado</h2>
-                        <p>Este curso possui suporte diretamente com um
-                            profissional da nossa equipe oficial</p>
-                    </header>
-                </article>
-                <article>
-                    <header>
-                        <h2>Mais de 100 aulas divididas em 10 módulos</h2>
-                        <p>A modularização que você precisa para compreender de
-                            maneira mais objetiva</p>
-                    </header>
-                </article>
-                <article>
-                    <header>
-                        <h2>Certificado reconhecido em mais de 17 países</h2>
-                        <p>Ao concluir o curso você terá um certificado com
-                            reconhecimento em diversos países da América
-                            Latina
-                        </p>
-                    </header>
-                </article>
-            </div>
-
             <div class="main_course_fullwidth">
                 <div class="main_course_rating_content">
                     <article class="main_course_rating_title">
                         <header>
-                            <h2>Curso considerado 5 estrelas por nossos 100
-                                alunos matriculados</h2>
+                            <h2>Sanduicheria 5 estrelas, consolidada na região
+                            </h2>
                         </header>
-                        <img src="img/star.png"
-                            title="Review do Curso HTML5 e CSS3 Essentials"
-                            alt="Review do Curso HTML5 e CSS3 Essentials">
-                        <img src="img/star.png"
-                            title="Review do Curso HTML5 e CSS3 Essentials"
-                            alt="Review do Curso HTML5 e CSS3 Essentials">
-                        <img src="img/star.png"
-                            title="Review do Curso HTML5 e CSS3 Essentials"
-                            alt="Review do Curso HTML5 e CSS3 Essentials">
-                        <img src="img/star.png"
-                            title="Review do Curso HTML5 e CSS3 Essentials"
-                            alt="Review do Curso HTML5 e CSS3 Essentials">
-                        <img src="img/star.png"
-                            title="Review do Curso HTML5 e CSS3 Essentials"
-                            alt="Review do Curso HTML5 e CSS3 Essentials">
+                        <img src="img/star.png" title="Sanduicheria KiSabor"
+                            alt="Sanduicheria KiSabor">
+                        <img src="img/star.png" title="Sanduicheria KiSabor"
+                            alt="Sanduicheria KiSabor">
+                        <img src="img/star.png" title="Sanduicheria KiSabor"
+                            alt="Sanduicheria KiSabor">
+                        <img src="img/star.png" title="Sanduicheria KiSabor"
+                            alt="Sanduicheria KiSabor">
+                        <img src="img/star.png" title="Sanduicheria KiSabor"
+                            alt="Sanduicheria KiSabor">
                     </article>
 
                     <section class="main_course_rating_content_comment">
                         <header>
-                            <h2>Veja o que estão falando sobre o curso</h2>
+                            <h2>Veja as vantagens de comprar conosco</h2>
                         </header>
                         <article>
                             <header>
-                                <h3>Gustavo Web</h3>
-                                <p>10/01/2018</p>
+                                <h3>Entrega rápida</h3>
                                 <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
+                                    title="Sanduicheria KiSabor"
+                                    alt="Sanduicheria KiSabor">
                                 <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
+                                    title="Sanduicheria KiSabor"
+                                    alt="Sanduicheria KiSabor">
                                 <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
+                                    title="Sanduicheria KiSabor"
+                                    alt="Sanduicheria KiSabor">
                                 <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
+                                    title="Sanduicheria KiSabor"
+                                    alt="Sanduicheria KiSabor">
                                 <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
+                                    title="Sanduicheria KiSabor"
+                                    alt="Sanduicheria KiSabor">
                             </header>
-                            <p>O contéudo é fantástico, eu não tinha
-                                conhecimento nenhum e agora estou desenvolvendo
-                                minhas
-                                páginas em HTML5 sem problemas</p>
+                            <p>A nossa equipe trabalha para sempre entregar seu
+                                lanche perfeito e de maneira rápida, peça quando
+                                quiser com a certeza de rapidez e eficiência.
+                            </p>
                         </article>
                         <article>
                             <header>
-                                <h3>Gustavo Web</h3>
-                                <p>10/01/2018</p>
+                                <h3>Atendimento</h3>
                                 <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
+                                    title="Sanduicheria KiSabor"
+                                    alt="Sanduicheria KiSabor">
                                 <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
+                                    title="Sanduicheria KiSabor"
+                                    alt="Sanduicheria KiSabor">
                                 <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
+                                    title="Sanduicheria KiSabor"
+                                    alt="Sanduicheria KiSabor">
                                 <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
+                                    title="Sanduicheria KiSabor"
+                                    alt="Sanduicheria KiSabor">
                                 <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
+                                    title="Sanduicheria KiSabor"
+                                    alt="Sanduicheria KiSabor">
                             </header>
-                            <p>O contéudo é fantástico, eu não tinha
-                                conhecimento nenhum e agora estou desenvolvendo
-                                minhas
-                                páginas em HTML5 sem problemas</p>
+                            <p>Prezamos sempre por um atendimento rápido e
+                                eficaz, ligue ou entre em contato pelo WhatsApp,
+                                você será muito bem atendido.</p>
                         </article>
                         <article>
                             <header>
-                                <h3>Gustavo Web</h3>
-                                <p>10/01/2018</p>
+                                <h3>Nossos lanches</h3>
                                 <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
+                                    title="Sanduicheria KiSabor"
+                                    alt="Sanduicheria KiSabor">
                                 <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
+                                    title="Sanduicheria KiSabor"
+                                    alt="Sanduicheria KiSabor">
                                 <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
+                                    title="Sanduicheria KiSabor"
+                                    alt="Sanduicheria KiSabor">
                                 <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
+                                    title="Sanduicheria KiSabor"
+                                    alt="Sanduicheria KiSabor">
                                 <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
+                                    title="Sanduicheria KiSabor"
+                                    alt="Sanduicheria KiSabor">
                             </header>
-                            <p>O contéudo é fantástico, eu não tinha
-                                conhecimento nenhum e agora estou desenvolvendo
-                                minhas
-                                páginas em HTML5 sem problemas</p>
+                            <p>Não podemos deixar de citar nossos lanches,
+                                feitos com carinho e dedicação, com os melhores
+                                ingredientes para que sua refeição seja uma
+                                experiência indescritível.</p>
                         </article>
                         <article>
                             <header>
-                                <h3>Gustavo Web</h3>
-                                <p>10/01/2018</p>
+                                <h3>Bebidas</h3>
                                 <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
+                                    title="Sanduicheria KiSabor"
+                                    alt="Sanduicheria KiSabor">
                                 <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
+                                    title="Sanduicheria KiSabor"
+                                    alt="Sanduicheria KiSabor">
                                 <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
+                                    title="Sanduicheria KiSabor"
+                                    alt="Sanduicheria KiSabor">
                                 <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
+                                    title="Sanduicheria KiSabor"
+                                    alt="Sanduicheria KiSabor">
                                 <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
+                                    title="Sanduicheria KiSabor"
+                                    alt="Sanduicheria KiSabor">
                             </header>
-                            <p>O contéudo é fantástico, eu não tinha
-                                conhecimento nenhum e agora estou desenvolvendo
-                                minhas
-                                páginas em HTML5 sem problemas</p>
-                        </article>
-                        <article>
-                            <header>
-                                <h3>Gustavo Web</h3>
-                                <p>10/01/2018</p>
-                                <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
-                                <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
-                                <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
-                                <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
-                                <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
-                            </header>
-                            <p>O contéudo é fantástico, eu não tinha
-                                conhecimento nenhum e agora estou desenvolvendo
-                                minhas
-                                páginas em HTML5 sem problemas</p>
-                        </article>
-                        <article>
-                            <header>
-                                <h3>Gustavo Web</h3>
-                                <p>10/01/2018</p>
-                                <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
-                                <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
-                                <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
-                                <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
-                                <img src="img/star.png"
-                                    title="Review do Curso HTML5 e CSS3 Essentials"
-                                    alt="Review do Curso HTML5 e CSS3 Essentials">
-                            </header>
-                            <p>O contéudo é fantástico, eu não tinha
-                                conhecimento nenhum e agora estou desenvolvendo
-                                minhas
-                                páginas em HTML5 sem problemas</p>
+                            <p>Aqui você encontra as mais variadas bebidas,
+                                geladinhas para degustar.</p>
                         </article>
                     </section>
                 </div>
@@ -457,8 +316,8 @@
         <div class="main_school">
             <section class="main_school_content">
                 <header class="main_school_header">
-                    <h1>Bem vindo a UpInside Treinamentos</h1>
-                    <p>A sua escola de Programação e Marketing Digital</p>
+                    <h1>Bem vindo a KiSabor</h1>
+                    <p>A sua melhor escolha em sanduicheria</p>
                 </header>
                 <div class="main_school_content_left">
                     <article class="main_school_content_left_content">
@@ -471,133 +330,87 @@
                                 <span class="icon-twitter"><a
                                         href="#twitter">Twitter</a></span>
                             </p>
-                            <h2>Tudo o que você precisa para ser um WebMaster
-                                Full Stack em um só lugar</h2>
+                            <h2>Aqui você encontra o melhor sanduíche, bebida e
+                                atendimento em um só lugar</h2>
                         </header>
-                        <p>Desde 2010 a UpInside vem criando os melhores cursos
-                            do mercado, entregamos ao aluno
-                            conhecimento
-                            prático e testado sem enrolação. Você tem acesso a
-                            aulas com a melhor qualidade, recursos
-                            que
-                            aceleram seu aprendizado e muito mais...</p>
-                        <p>Que tal estudar, e ter o certificado da escola eleita
-                            a melhor do Brasil com reconhecimento
-                            em mais
-                            de 17 países pela Latin American Quality Institute?
+                        <p>Desde 2010 a KiSabor trabalha para te entregar a
+                            melhor experiência em lanches, atendimento e
+                            entregas e muito mais ... </p>
+                        <p>Que tal estudar, se deliciar com nossos lancher e ter
+                            a entrega mais rápida da região? Venha para a
+                            KiSabor!</p>
                         </p>
                     </article>
                     <section class="main_school_list">
                         <header>
-                            <h2>Confira nossos prêmios</h2>
+                            <h2>Confira os nossos destaques</h2>
                         </header>
                         <article>
                             <header>
                                 <h3 class="icon-trophy">Qualidade e Excelência
-                                    - Master Pesquisas</h3>
+                                </h3>
                             </header>
                         </article>
                         <article>
                             <header>
                                 <h3 class="icon-trophy">Qualidade e Atendimento
-                                    - Master Pesquisas</h3>
+                                </h3>
                             </header>
                         </article>
                         <article>
                             <header>
-                                <h3 class="icon-trophy">Prêmio Diamante -
-                                    Master Pesquisas</h3>
+                                <h3 class="icon-trophy">Entrega rápida</h3>
                             </header>
                         </article>
                         <article>
                             <header>
-                                <h3 class="icon-trophy">Estrela do Sul - Master
-                                    Pesquisas</h3>
-                            </header>
-                        </article>
-                        <article>
-                            <header>
-                                <h3 class="icon-trophy">Medalha de Ouro a
-                                    Excelência - LAQI</h3>
-                            </header>
-                        </article>
-                        <article>
-                            <header>
-                                <h3 class="icon-trophy">Brazil Quality
-                                    Certification - LAQI</h3>
-                            </header>
-                        </article>
-                        <article>
-                            <header>
-                                <h3 class="icon-trophy">Melhor Plataforma EAD -
-                                    Digital Awards</h3>
+                                <h3 class="icon-trophy">Bebidas variadas e
+                                    geladas</h3>
                             </header>
                         </article>
                     </section>
                 </div>
                 <div class="main_school_content_right">
-                    <img src="img/upinside.jpg" title="UpInside Treinamentos"
+                    <img src="img/bg_img_sanduiche.png"
+                        title="UpInside Treinamentos"
                         alt="UpInside Treinamentos">
                 </div>
                 <article class="main_school_address">
                     <header>
                         <h2 class="icon-map2">Nos encontre</h2>
                     </header>
-                    <p>Rua Huberto Rohden, 100 - Campeche - Florianópolis/SC -
-                        +55 48 3371-5879</p>
+                    <p>Rua João Namen Curã, 9 - Vila Seac - Ipameri/GO -
+                        +55 64 99229-2132</p>
                 </article>
             </section>
         </div>
         <section class="main_tutor">
             <div class="main_tutor_content">
                 <header class="main_tutor_header">
-                    <h1>Conheça o Gustavo Web, seu tutor nesse Curso</h1>
-                    <p>Eu vou te ajudar a criar sua webpage em HTML5 e CSS3</p>
+                    <h1>Conheça o Ruber, seu chapeiro dedicado</h1>
+                    <p>Eu vou te proporcionar o melhor lanche!</p>
                 </header>
-                <div class="main_tutor_content_img"><img
-                        src="img/gustavoweb.jpg"
-                        title="Imagem do Gustavo Web"
-                        alt="Imagem do Gustavo Web"></div>
+                <div class="main_tutor_content_img"><img src="img/ruber.png"
+                        title="Imagem do Ruber" alt="Imagem do Ruber"></div>
                 <article class="main_tutor_history">
                     <header>
-                        <h2>Formado em Ciência da Computação e apaixonado por
-                            Web</h2>
+                        <h2>Com mais de 10 anos no ramo</h2>
                     </header>
-                    <p>Como muitos, comecei na programação por conta dos jogos!
-                        Com o tempo, o amor pela programação foi
-                        crescendo a ponto de tomar como profissão e me
-                        especializar na área. Hoje, com a bagagem que
-                        tenho,
-                        compartilho meu conhecimento com todos os alunos da
-                        UpInside Treinamentos
+                    <p>Como muitos, comecei no ramo em busca de uma oportunidade
+                        de trabalho, e hoje, com mais de 10 anos de experiência,
+                        posso dizer que sou um chapeiro dedicado e apaixonado
+                        pelo que faço.
                     </p>
                 </article>
                 <section class="main_tutor_social_network">
                     <header>
-                        <h2>Me siga nas redes sociais</h2>
+                        <h2>Me siga no Instagram</h2>
                     </header>
                     <article>
                         <header>
-                            <h3><a class="icon-facebook" href="#facebook">Meu
-                                    Facebook</a></h3>
-                        </header>
-                    </article>
-                    <article>
-                        <header>
-                            <h3><a class="icon-facebook2"
-                                    href="#facebook">Minha FanPage</a></h3>
-                        </header>
-                    </article>
-                    <article>
-                        <header>
-                            <h3><a class="icon-google-plus2"
-                                    href="#google+">Meu Google+</a></h3>
-                        </header>
-                    </article>
-                    <article>
-                        <header>
                             <h3><a class="icon-instagram"
-                                    href="#instagram">Meu Instagram</a></h3>
+                                    href="https://www.instagram.com/ruberrodriguesdo/"
+                                    target="_blank">Meu Instagram</a></h3>
                         </header>
                     </article>
                 </section>
@@ -607,13 +420,12 @@
     <section class="main_optin_footer">
         <div class="main_optin_footer_content">
             <header>
-                <h1>Quer receber nosso contéudo exclusivo? Assine nossa lista
-                    VIP :)</h1>
+                <h1>Quer ver nosso cardápio completo? :)</h1>
             </header>
             <article>
                 <header>
-                    <h2><a class="btn" href="#vip">Entrar para a List
-                            VIP</a></h2>
+                    <h2><a class="btn" href="docs/cardapio_sabor.pdf"
+                            target="_blank">Nosso Cardápio</a></h2>
                 </header>
             </article>
         </div>
