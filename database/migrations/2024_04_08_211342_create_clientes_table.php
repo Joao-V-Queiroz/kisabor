@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('endereco', 255);
             $table->string('bairro', 255);
             $table->string('cidade', 255);
-            $table->string('estado', 2);
+            $table->string('estado', 255);
             $table->string('complemento', 255)->nullable();
             $table->timestamps();
         });

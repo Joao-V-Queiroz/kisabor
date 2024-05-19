@@ -7,11 +7,14 @@ use App\Filament\Resources\PedidoResource\RelationManagers;
 use App\Models\Cliente;
 use App\Models\Pedido;
 use App\Models\Produto;
+use Filament\Forms\Components\DatePicker;;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
+use Filament\Forms\Get;
+use Filament\Forms\Set;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Columns\SelectColumn;
@@ -20,6 +23,8 @@ use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 use Leandrocfe\FilamentPtbrFormFields\Money;
 use Filament\Tables\Enums\FiltersLayout;
+use Filament\Tables\Filters\Filter;
+use Illuminate\Database\Eloquent\Builder;
 
 class PedidoResource extends Resource
 {
@@ -34,13 +39,18 @@ class PedidoResource extends Resource
                 Section::make()
                     ->columns(12)
                     ->schema([
-                        // Select::make('cliente')
-                        //     ->label('Cliente')
-                        //     ->columnSpan(12)
-                        //     ->relationship('produtos', titleAttribute: 'nome')
-                        //     ->options(Cliente::all()->pluck('nome', 'id')->toArray())
-                        //     ->searchable()
-                        //     ->required(),
+                        Select::make('cliente_id')
+                            ->label('Cliente')
+                            ->columnSpan(12)
+                            ->relationship('cliente', titleAttribute: 'nome')
+                            ->options(Cliente::all()->pluck('nome', 'id')->toArray())
+                            ->searchable()
+                            ->required()
+                            ->live()
+                            ->afterStateUpdated(function (Get $get, Set $set) {
+                                $cliente = Cliente::find($get('cliente_id'));
+                                $set('endereco_entrega', $cliente->endereco . ', ' . $cliente->numero . ' - ' . $cliente->bairro . ', ' . $cliente->cidade . ' - ' . $cliente->estado . ', ' . $cliente->cep);
+                            }),
                         Select::make('produtos')
                             ->label('Produtos')
                             ->columnSpan(12)
@@ -55,6 +65,12 @@ class PedidoResource extends Resource
                             ->columnSpan(6)
                             ->numeric()
                             ->mask('999')
+                            ->required(),
+                        DatePicker::make('data_pedido')
+                            ->label('Data do pedido')
+                            ->default(now())
+                            ->native(false)
+                            ->columnSpan(6)
                             ->required(),
                         Money::make('valor')
                             ->prefix('R$')
@@ -73,6 +89,7 @@ class PedidoResource extends Resource
                         Select::make('tipo_pedido')
                             ->label('Tipo de Pedido')
                             ->columnSpan(6)
+                            ->live()
                             ->options([
                                 'entrega' => 'Entrega',
                                 'retirada' => 'Retirada',
@@ -89,6 +106,7 @@ class PedidoResource extends Resource
                             ->required(),
                         Textarea::make('endereco_entrega')
                             ->label('Endereço de Entrega')
+                            ->hidden(fn (Get $get) => $get('tipo_pedido') !== 'entrega')
                             ->rows(4)
                             ->columnSpan(12)
                             ->required(),
@@ -104,13 +122,20 @@ class PedidoResource extends Resource
     {
         return $table
             ->columns([
+                TextColumn::make('data_pedido')
+                    ->label('Data do Pedido')
+                    ->date()
+                    ->sortable(),
+                TextColumn::make('cliente.nome')
+                    ->label('Cliente')
+                    ->sortable()
+                    ->searchable(),
                 TextColumn::make('produtos.nome')
                     ->label('Produto')
                     ->sortable()
                     ->searchable(),
-                TextColumn::make('quantidade'),
                 TextColumn::make('valor')
-                    ->label('R$'),
+                    ->label('Valor'),
                 TextColumn::make('forma_pagamento')
                     ->label('Pagamento'),
                 TextColumn::make('tipo_pedido')
@@ -131,7 +156,18 @@ class PedidoResource extends Resource
                         'pendente' => 'Pendente',
                         'preparando' => 'Preparando',
                         'entregue' => 'Entregue',
-                    ]),
+                ]),
+                Filter::make('data_pedido')
+                ->form([
+                    DatePicker::make('data_pedido')
+                    ->timezone('America/Sao_Paulo')
+                    ->format('d/m/Y')
+                    ->displayFormat('d/m/Y')
+                    ->default(now()),
+                ])
+                ->query(function (Builder $query, array $data) {
+                    $query->whereDate('data_pedido', $data['data_pedido']);
+                }),
             ], layout: FiltersLayout::AboveContent)
             ->actions([
                 Tables\Actions\ViewAction::make(),

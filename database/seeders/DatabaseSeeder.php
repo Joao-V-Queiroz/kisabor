@@ -25,10 +25,10 @@ class DatabaseSeeder extends Seeder
         info('Adicionando dados de clientes, pedidos e produtos...');
 
         $this->call([
-            ClienteSeeder::class,
-            ProdutoSeeder::class,
-            PedidoSeeder::class,
-            PedidoProdutoSeeder::class,
+            // ClienteSeeder::class,
+            // ProdutoSeeder::class,
+            // PedidoSeeder::class,
+            // PedidoProdutoSeeder::class,
 		]);
     }
 }
